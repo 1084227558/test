@@ -21,13 +21,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "node ./index.js && lint-staged",
-      "commit-msg": "node ./index.js",
-      "post-merge": "node ./index.js"
+      "pre-commit": "node ./src/index.js && lint-staged",
+      "commit-msg": "node ./src/index.js",
+      "post-merge": "node ./sec/index.js"
     }
   },
   "lint-staged": {
-    "*.js": [
+    "src/**": [
       "prettier --config .prettierrc --write",
       "eslint --fix",
       "git add"
