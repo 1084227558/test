@@ -28,8 +28,8 @@
   },
   "lint-staged": {
     "src/**": [
-      "prettier --config .prettierrc --write",
       "eslint --fix",
+      "prettier --config .prettierrc --write",
       "git add"
     ]
   }
