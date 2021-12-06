@@ -3,4 +3,4 @@ function test(a) {
 	console.log(`number is `, a)
 }
 
-test(12)
+test(123)
