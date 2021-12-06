@@ -111,6 +111,7 @@ export default {
   methods: {
     test(){
             console.log(`123  `);
+         var a = 1
       
     }
   },
