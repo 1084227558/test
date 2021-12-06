@@ -5,6 +5,12 @@ import store from "./store";
 
 Vue.config.productionTip = false;
 
+function test(a){
+  console.log(`123`,a);
+  
+}
+test(2)
+
 new Vue({
   router,
   store,

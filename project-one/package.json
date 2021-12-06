@@ -22,13 +22,18 @@
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
-    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-config-airbnb": "^19.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-vue": "^8.2.0",
     "husky": "^7.0.4",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.2",
     "vue-template-compiler": "^2.6.11"
   },
   "husky": {
@@ -37,8 +42,8 @@
     }
   },
   "lint-staged": {
-    "src/**": [
-      "prettier --config .prettierrc --write",
+    "src/**/*.{jsx,txs,ts,js,json,css,md}": [
+      "prettier --write",
       "eslint --fix",
       "git add"
     ]
